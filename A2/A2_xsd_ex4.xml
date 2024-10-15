@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <alumnos xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-xs:noNamespaceSchemaLocation="A2_xsd_ex4.xsd">
+    xs:noNamespaceSchemaLocation="A2_xsd_ex4.xsd">
     <alumno>
         <nombre>Pepe</nombre>
         <apellido>Fernandez</apellido>

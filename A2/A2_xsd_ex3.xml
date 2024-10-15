@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<nota xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
-xs:noNamespaceSchemaLocation="A2_xsd_ex3.xsd">
+<nota xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="A2_xsd_ex3.xsd">
     <para></para>
     <de>Juan</de>
     <asunto>Recuento</asunto>
