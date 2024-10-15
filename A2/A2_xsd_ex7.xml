@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matricula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="A2_xsd_ex7.xsd">
+    <ciclo>2014-2015</ciclo>
+    <alumno>
+        <alumno>
+            <nombre>Alex</nombre>
+            <year>2003</year>
+            <asignaturas>
+                <asignatura>Hacking</asignatura>
+                <asignatura>Civerseguretat</asignatura>
+                <asignatura>Seguretat</asignatura>
+            </asignaturas>
+        </alumno>
+        <alumno>
+            <nombre>Joel</nombre>
+            <year>2005</year>
+            <asignaturas>
+                <asignatura>Biologia</asignatura>
+                <asignatura>Historia</asignatura>
+                <asignatura>Matematices</asignatura>
+            </asignaturas>
+        </alumno>
+        <alumno>
+            <nombre>Pep</nombre>
+            <year>2009</year>
+            <asignaturas>
+                <asignatura>Bases de Datos</asignatura>
+                <asignatura>Lenguatge de Marques</asignatura>
+                <asignatura>Programación</asignatura>
+            </asignaturas>
+        </alumno>
+    </alumno>
+</matricula>
