@@ -7,6 +7,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Exercici 3</title>
+        <style>
+            .custom-list {
+                list-style: none;
+            }
+            .custom-list li::before {
+                content: "-";
+                margin-right: 8px;
+            }
+
+        </style>
     </head>
     <body style="background-color: green;">
         <hr>
@@ -27,11 +37,11 @@
             <li>Milk</li>
         </ul>
         <p>Coffee</p>
-        <ul>
+        <ul class="custom-list">
             <li>black hot drink</li>
         </ul>
         <p>Milk</p>
-        <ul>
+        <ul class="custom-list">
             <li>white cold drink</li>
         </ul>
         <h4>Numbered List:</h4>
@@ -42,5 +52,8 @@
             <li>Oranges</li>
         </ol>
         <h4>Letters List</h4>
+        <ol type="A">
+            <li></li>
+        </ol>
     </body>
 </html>
