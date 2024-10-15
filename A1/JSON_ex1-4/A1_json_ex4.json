@@ -1,0 +1,84 @@
+{
+    "recetas": [
+        {
+            "receta": {
+                "_nom": "Sufle de Chocolate",
+                "ingredientes":[
+                    {
+                        "ingrediente": { 
+                            "_nom":"Chocolate",
+                            "contingut":"100g"
+                    }
+                    },
+                    {
+                        "ingrediente": {
+                            "_nom":"Cacao en polvo",
+                            "contingut":"25g"
+                        }
+                    },
+                    {
+                        "ingrediente": {
+                            "_nom":"Mantequilla",
+                            "contingut":"60g"
+                        }
+                    },
+                    {
+                        "ingrediente":{
+                            "_nom":"huevo",
+                            "contingut":4
+                        }
+                    },
+                    {
+                        "ingrediente":{
+                            "_nom":"Azúcar",
+                            "contingut":"50g"
+                        }
+                    },
+                    {
+                        "ingrediente": {
+                            "_nom":"Sal",
+                            "contingut":"1 pellizco"
+                        }
+                    }
+                ],
+                "herramientas": [
+                    {
+                        "herramienta":{
+                            "_nom":"molde",
+                            "contingut": "4"
+                        }
+                    },
+                    {
+                        "herramienta":{
+                            "_nom":"taza",
+                            "contingut": "1"
+                        }
+                    },
+                    {
+                        "herramienta":{
+                            "_nom":"horrno",
+                            "contingut": "1"
+                        }
+                    },
+                    {
+                        "herramienta":{
+                            "_nom":"recipiente",
+                            "contingut": "2"
+                        }
+                    }
+                ],
+                "processo": {
+                    "passo1": "Elegimos el chocolate a utilizar, el que más os guste, pero el chocolate debe llevar al menos un 70% de cacao. Lo vamos a apoyar con el cacao en polvo, así conseguimos un mayor sabor a chocolate y no necesitaremos prepararlos con harina.",
+                    "passo2": "Troceamos el chocolate, cuanto más fino quede mejor se fundirá. Partimos la mantequilla dejando un poquito para los moldes y calentamos todo en un tazón grande en el micro.",
+                    "passo3": "Con 2 minutos a temperatura media llega, al minuto de la preparación, sacamos y removemos un poco con unas varillas manuales.",
+                    "passo4": "Volvemos a darle un toque de temperatura y juntamos con las varillas hasta que obtengamos una crema homogénea y suave. No debemos calentar el chocolate en el micro más de lo necesario, pues se nos puede quemar. Dejamos que se enfríe un poco.",
+                    "passo5": "Separamos las claras de las yemas de huevo (estas últimas las reservamos para el siguiente paso).",
+                    "passo6": "Vamos a montar las 5 claras de huevo, aunque no deben quedar demasiado firmes."
+                }
+            }
+        },
+        {
+            
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "cuadros": [
+        {
+        "nom": "Azul sobre blanco",
+        "descripcio": "abstracto",
+        "creador": "Pere Àguila",
+        "any": "2014",
+        "fet": "óleo"
+        },
+        {
+        "nom": "Gris oscura",
+        "descripcio": "abstracto",
+        "creador": "Pere Àguila",
+        "any": "2010",
+        "fet": "acuarela"
+        }
+    ],
+    "escultura": {
+        "nom": "Camino largo",
+        "descripcio": "escritura",
+        "creador": "Marta Lambert",
+        "any": "1981",
+        "fet": "mármol"
+    }
+}

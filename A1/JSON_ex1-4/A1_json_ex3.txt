@@ -1,0 +1,5 @@
+El carrer on hi ha l'estació amb id 33?
+	El carrer és Pontevedra 58B
+
+Quantes bicicletes hi ha actualment a l'estació a Girona 68?
+	Número de bicicletes 17

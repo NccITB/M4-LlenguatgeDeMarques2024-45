@@ -1,0 +1,11 @@
+{
+    "alumna": {
+        "nom": "Juan García",
+        "data": {
+            "dia": "23",
+            "mes": "Febrer",
+            "any": "2001"
+        },
+        "ciutat": "Barcelona"
+    }
+}

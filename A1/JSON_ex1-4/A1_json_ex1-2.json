@@ -1,0 +1,37 @@
+{
+    "esteblecimientos": [
+        {
+            "esteblecimento": {
+                "nom": "Bar Pasqual",
+                "descripcio": "Tapas",
+                "direcio": {
+                "carrer": "avinguda diagonal",
+                "numero": "232"
+                },
+                "propietari": "Joan Alcover"
+            }
+        },
+        {
+            "esteblecimento": {
+                "nom": "Restaurant Meravelles",
+                "descripcio": "Menú",
+                "direcio": {
+                "carrer": "Maridiana",
+                "numero": "111"
+                },
+                "propietari": "Maria Garcia"
+            }
+        },
+        {
+            "esteblecimento": {
+                "nom": "Restaurant Racó de l'Avi",
+                "descripcio": "Menú",
+                "direcio": {
+                "carrer": "Av.Roma",
+                "numero": "221"
+                },
+                "propietari": "Alba Puig"
+            }
+        }
+    ]
+}

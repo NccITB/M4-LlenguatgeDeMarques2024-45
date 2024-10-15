@@ -1,0 +1,28 @@
+{
+    "widget": {
+        "debug": "on",
+        "window": {
+            "_title": "Sample Konfabulatoe Widget",
+            "name": "main_window",
+            "width": 500,
+            "heigth": 500
+        },
+        "image": {
+            "_src":"Images/Sun.png",
+            "_name": "sun1",
+            "h0ffset": 250,
+            "v0ffset": 250,
+            "alignment": "center"
+        },
+        "text": {
+            "_data": "Click Here",
+            "_size": 36,
+            "_style": "bold",
+            "name": "text1",
+            "h0ffset": 250,
+            "v0ffset": 100,
+            "alignment": "center",
+            "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
+        }
+    }
+}
