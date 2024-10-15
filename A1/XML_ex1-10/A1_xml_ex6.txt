@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animales>
+    <gato></gato>
+    <perro></perro>
+</animales>
+
+--------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<perro></perro>
+
+--------------------------------------------------------
+
+<?xml version="1.0" standalone="yes"?>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+    <nom>Juan García</nom>
+    <naixment>
+        <dia>23</dia>
+        <mes>Febrer</mes>
+        <any>2001</any>
+        <lloc>Barcelona</lloc>
+    </naixment>
+</alumno>

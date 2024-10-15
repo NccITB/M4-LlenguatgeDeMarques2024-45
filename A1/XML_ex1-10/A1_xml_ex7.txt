@@ -1,0 +1,23 @@
+<correcio1>
+    <persona>
+        <nombre>Pere Garcia</nombre>
+    </persona>
+    <perro>
+        <nombre>Rufy</nombre>
+    </perro>
+</correcio1>
+
+<persona>
+    <nombre>Pere</nombre>
+    <apellido1>Pérez</apellido1>
+    <apellido2>Garcia</apellido2>
+    <edad>22</edad>
+</persona>
+
+
+En el primer fragment del codi no és vàlid, ja que li falta
+una etiqueta arrel. La correcció és crear l'etiqueta correcio1.
+En el segon fragment no és vàlid, perquè no té etiqueta arrel,
+la manera per soluciona ro que és utilitzat és eliminar una etiqueta
+persona i posar les etiquetes apellido2 i edad a la primera etiqueta
+persona que d'aquesta manera es torna una etiqueta arrel.

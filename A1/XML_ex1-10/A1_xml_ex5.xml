@@ -1,0 +1,10 @@
+<ex5>
+    <correcio>
+        <corredor posicio="1">Manuel Roure</corredor>
+        <alumne carrec="delegat">Jaume Ravent</alumne>
+        <coche tipo_combustible="gasolina">Seat Ibiza</coche>
+        <politico cargo="alcalde" cargo2="diputat">Jordi Rufi</politico>
+    </correcio>
+
+    <coche marca="Seat" color="Rojo" matricula="B3456L" conductor="Jorge" conductor2="Maria" alquilado="Si"/>
+</ex5>

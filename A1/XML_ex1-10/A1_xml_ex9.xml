@@ -1,0 +1,98 @@
+<recetas>
+    <receta nom="Sufle de Chocolate">
+        <ingredientes>
+            <ingrediente nom="Chocolate">100g</ingrediente>
+            <ingrediente nom="Cacao en polvo">25g</ingrediente>
+            <ingrediente nom="Mantequilla">60g</ingrediente>
+            <ingrediente nom="huevo">4</ingrediente>
+            <ingrediente nom="Azúcar">50g</ingrediente>
+            <ingrediente nom="Sal">1 pellizco</ingrediente>
+        </ingredientes>
+        <herramientas>
+            <herramienta nom="molde">4</herramienta>
+            <herramienta nom="taza">1</herramienta>
+            <herramienta nom="horrno">1</herramienta>
+            <herramienta nom="recipiente">2</herramienta>
+        </herramientas>
+        <processo>
+            <passo1>
+                Elegimos el chocolate a utilizar, el que más os
+                 guste, pero el chocolate debe llevar al menos un 
+                 70% de cacao. Lo vamos a apoyar con el cacao en 
+                 polvo, así conseguimos un mayor sabor a chocolate
+                 y no necesitaremos prepararlos con harina.
+            </passo1>
+            <passo2>
+                Troceamos el chocolate, cuanto más fino quede
+                mejor se fundirá. Partimos la mantequilla dejando
+                un poquito para los moldes y calentamos todo en un
+                tazón grande en el micro.
+            </passo2>
+            <passo3>
+                Con 2 minutos a temperatura media llega, al minuto 
+                de la preparación, sacamos y removemos un poco con
+                unas varillas manuales.
+            </passo3>
+            <passo4>
+                Volvemos a darle un toque de temperatura y juntamos
+                con las varillas hasta que obtengamos una crema
+                homogénea y suave. No debemos calentar el chocolate
+                en el micro más de lo necesario, pues se nos puede
+                quemar. Dejamos que se enfríe un poco.
+            </passo4>
+            <passo5>
+                Separamos las claras de las yemas de huevo (estas 
+                últimas las reservamos para el siguiente paso).
+            </passo5>
+            <passo6>
+                Vamos a montar las 5 claras de huevo, aunque no
+                deben quedar demasiado firmes.
+            </passo6>
+        </processo>
+    </receta>
+    <receta nom="Salmón al horno">
+        <ingredientes>
+            <ingrediente nom="Salmon fresco lomo">2</ingrediente>
+            <ingrediente nom="Mayonesa">80g</ingrediente>
+            <ingrediente nom="Clara de huevo">1</ingrediente>
+            <ingrediente nom="Diente de ajo">0.5</ingrediente>
+            <ingrediente nom="Limón">1</ingrediente>
+            <ingrediente nom="Sal">1 pellizco</ingrediente>
+        </ingredientes>
+        <herramientas>
+            <herramienta nom="Horno">1</herramienta>
+            <herramienta nom="taza">1</herramienta>
+            <herramienta nom="horrno">1</herramienta>
+            <herramienta nom="recipiente">2</herramienta>
+        </herramientas>
+        <processo>
+            <passo1>
+                Encendemos el horno, con calor arriba y abajo, a 200ºC.
+            </passo1>
+            <passo2>
+                Limpiamos y secamos los lomos de salmón, asegurando que
+                no quedan escamas en la piel. 
+            </passo2>
+            <passo3>
+                Sazonamos, colocamos en una fuente de horno y reservamos.
+            </passo3>
+            <passo4>
+                Pelamos el diente de ajo, rallamos la mitad y lo mezclamos
+                con la mayonesa.
+            </passo4>
+            <passo5>
+                Añadimos un poco de ralladura de limón y removemos.
+            </passo5>
+            <passo6>
+                Batimos la clara de huevo a punto de nieve. Mezclamos con la 
+                mayonesa suavemente y con movimientos envolventes para que 
+                no pierda el aire incorporado con el batido.
+            </passo6>
+            <passo7>
+                Extendemos una capa de la espuma de mayonesa sobre los lomos 
+                de salmón, introducimos en el horno y cocemos durante 
+                10 minutos 
+            </passo7>
+        </processo>
+    </receta>
+</recetas>

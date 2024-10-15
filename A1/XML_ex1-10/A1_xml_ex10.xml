@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<inversion xmlns:geo="http://geografia" xmlns:fin="http://finanzas">
+    <geo:pais nombre="Francia">
+        <geo:capital>
+            Paris
+        </geo:capital>
+        <fin:capital>
+            1200M€
+        </fin:capital>
+    </geo:pais>
+</inversion>

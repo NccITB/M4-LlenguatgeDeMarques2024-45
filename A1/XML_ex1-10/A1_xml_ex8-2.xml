@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<establecimients>
+    <estebliment nom="Bar Pasqual">
+        <descripcio>Bar de taper</descripcio>
+        <direcio>Avinguada Diagonal, 232</direcio>
+        <propietari>Joan Alcover</propietari>
+    </estebliment>
+    <estebliment nom="Restaurant meravelles">
+        <decripcio>Resteurant de menú</decripcio>
+        <direcio>Meridiana 111</direcio>
+        <propietari>Maria Garcia</propietari>
+    </estebliment>
+    <establimient nom="Restaurant Racó de l'Avia">
+        <descripcio>Restaurant de menú</descripcio>
+        <direcio>Av.Roma 221</direcio>
+        <propietari>Alba Puig</propietari>
+    </establimient>
+</establecimients>

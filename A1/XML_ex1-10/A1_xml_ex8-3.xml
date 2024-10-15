@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obrasDeArte>
+    <obra nom="Azul sobre blanco">
+        <tipo>Abstracto</tipo>
+        <pinto>Pere Àguila</pinto>
+        <any>2014</any>
+        <fet>Óleo</fet>
+    </obra>
+    <obra nom="Gris ocuro">
+        <tipo>Abstracto</tipo>
+        <pinto>Pere Àguila</pinto>
+        <any>2010</any>
+        <fet>Acuarela</fet>
+    </obra>
+    <obra nom="Camino largo">
+        <tipo>esctitura</tipo>
+        <escriptor>Marta Lamert</escriptor>
+        <any>1981</any>
+        <fet>marmol</fet>
+    </obra>
+</obrasDeArte>
