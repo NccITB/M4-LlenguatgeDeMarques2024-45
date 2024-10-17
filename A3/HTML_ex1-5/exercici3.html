@@ -18,7 +18,7 @@
 
         </style>
     </head>
-    <body style="background-color: green;">
+    <body style="background-color: green; font-family: 'Times New Roman', Times, serif;">
         <hr>
         <h4>A nested list:</h4>
         <ul>
@@ -84,6 +84,130 @@
         <a href="mailto:narcis.carol@gmail.com">Envia'm un email</a>
         <hr>
         <h1>CREATE TABLE exemples</h1>
-        
+        <ul>
+            <li><a href="#1">Basic CREATE TABLE statement</a></li>
+            <li><a href="#2">Creating a table with a particular storage engine</a></li>
+            <li><a href="#3">Creating a table with auto_increment</a></li>
+            <li><a href="#4">Creating a table with the current timestamp</a></li>
+            <li><a href="#5">Creating a table with TIMESTAMP DEFAULT NOW()</a></li>
+            <li><a href="#6">Viewing a table definition</a></li>
+        </ul>
+        <h2 id="1">Basic CREATE TABLE statement</h2>
+        <p>A very basic CREATE TABLE statement which should work in any SQL database:</p>
+        <pre>
+mysql>  CREATE TABLE exemple (
+          id INT,
+          data VARCHAR(100)
+        ) TYPE=Innodb;
+query OK, 0 row affected (0.03 sec)
+        </pre>
+        <h2 id="2">Creating a table with a particular storage engine</h2>
+        <p>MySQL provides a varitey of different table types with different levels of functionality. The usual default, and most widely used, is <code>MyISEM</code>. Other storage types must be explicitly defined:</p>
+        <pre>
+mysql>  CREATE TABLE exemple_innodb (
+          id INT,
+          data VARCHAR(100)
+        ) TYPE=Innodb;
+Query OK, 0 row affected (0.03 sec)
+        </pre>
+        <p>Note that beginning with MySQL 4.1 <code>ENGINE=innodb</code> is the preferred method of defining the storage type.</p>
+        <p>Use <code>SHOW CREATE TABLE </code>(see <a href="#">below</a>) to check that MySQL has created the table as you defined it.</p>
+        <h2 id="3">Creating a table with auto_increment</h2>
+        <p>Often you'll want to be able to automaticaly assign a sequential value to a column:</p>
+        <pre>
+mysql> CREATE TABLE exemple_autoincrement (
+          id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+          data VARCHAR(100)
+        );
+Query OK, 0 row affected (0.01 sec)
+
+mysql> INSERT INTO exemple_autoincrement (data)
+            VALUES ('Hello World');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM exemple_autoincrement;
++----+-------------+
+| id | data        |
++----+-------------+
+|  1 | Hello World |
++----+-------------+
+1 row in set (0.01 sec)
+        </pre>
+        <h2 id="4">Creating a table with the current timestamp</h2>
+        <p>Often it's useful to have an automatic timestamp on eath record. The MySQL special datatype <code>TIMESTAMP</code> enables you to keep track of changes to a record:</p>
+        <br>
+        <pre>
+mysql> CREATE TABLE exemple_timestamp (
+          id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+          data VARCHAR(100),
+          cur_timestamp TIMESTAMP (8)
+        );
+Query OK, 0 row affected (0.00 sec)
+
+mysql> INSERT INTO exemple_timestamp (data)
+            VALUES ('The time of creation is:');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM exemple_timestamp;
++----+--------------------------+---------------------+
+| id | data                     | cur_timestamp       |
++----+--------------------------+---------------------+
+|  1 | The time of creation is: | 2004-12-01 20:37:22 |
++----+--------------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> UPDATE exemple_timestamp 
+          SET data = 'The time of update is: '
+        WERE id=1;
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM exemple_timestamp;
++----+--------------------------+---------------------+
+| id | data                     | cur_timestamp       |
++----+--------------------------+---------------------+
+|  1 | The time of update is:   | 2004-12-01 20:38:55 |
++----+--------------------------+---------------------+
+1 row in set (0.01 sec)
+        </pre>
+        <p>The column <code>cur_timestamp</code> is automaticaly updated every time the record is changed.</p>
+        <h2 id="5">Creating a table with TIMESTAMP DEFAULT NOW()</h2>
+        <p>MySQL supports the construct <code>TIMESTAMP DEFAULT NOW ()</code> only from verson 4.1:</p>
+        <pre>
+CREATE TABLE exemple_default_now (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    data VARCHAR(100),
+    created TIMESTAMP DEFAULT NOW()
+);
+        </pre>
+        <p>In this case the column <code>created</code> retains its value and is not changed during subsequent updates.</p>
+        <p>For versions prior to 4.1, the only workaround is to create to timestemp columns in a table, and explicitly set the second one when inserting the record. Remember: the first <code>TIMESTAMP</code> will be automogically updated on each record update</p>
+        <h2 id="6">Viewing a table definition</h2>
+        <p>For basic information on table columns, use <code>DESC tablename</code>:</p>
+        <br>
+        <pre>
+mysql> DESC exemple;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int(11)      | NO   |     | NULL    |                |
+| data  | varchar(100) | YES  |     | NULL    |                |
++-------+--------------+------+-----+---------+----------------+
+2 rows in set (0.00 sec)
+        </pre>
+        <p>Exact defination of the table:</p>
+        <pre>
+mysql> SHOW CREATE TABLE exemple;
++---------+---------------------------------------------------------+
+| Table   | Create Table                                            |
++---------+---------------------------------------------------------+
+| exemple | CREATE TABLE `exemple` (
+  `id` int(11) default NULL,
+  `data` varchar(100) default NULL,
+) ENGINE=MySQL DEFAULT CHARSET=latin1 |
++---------+---------------------------------------------------------+
+1 row in set  (0.00 sec)
+        </pre>
+        <p>(this exemple from MySQL 4.1)</p>
     </body>
 </html>
