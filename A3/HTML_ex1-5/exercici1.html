@@ -3,19 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <title>Exercici 1</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-areas: 
+                    "header header"
+                    "main aside"
+                    "footer footer";
+                grid-template-rows: auto 1fr auto;
+                grid-template-columns: 2fr 1fr;
+                height: 97vh;
+                font-size: 50px;
+            }
+            header {
+                grid-area: header;
+                background-color: #1e90ff;
+                padding: 20px;
+                font-size: 2em;
+            }
+
+            main {
+                grid-area: main;
+                background-color: #00ffff;
+                padding: 20px;
+                font-size: 1.5em;
+            }
+
+            aside {
+                grid-area: aside;
+                background-color: #9cf7d9;
+                padding: 20px;
+                font-size: 1.5em;
+            }
+
+            footer {
+                grid-area: footer;
+                background-color: #ffe4b5;
+                padding: 20px;
+                font-size: 1.5em;
+            }
+            
+        </style>
     </head>
-    <body style="margin: 0; padding: 0;">
-        <header style="background-color: dodgerblue">
-            Header
-        </header>
-        <main style="background-color: darkturquoise;">
-            Main
-        </main>
-        <aside style="background-color: darkcyan">
-            Aside
-        </aside>
-        <footer style="background-color: pink;">
-            Footer
-        </footer>
+    <body>
+        <header>Header</header>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
     </body>
 </html>
