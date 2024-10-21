@@ -5,93 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas Ejemplo</title>
     <style>
-        table, th, td {
+        table, th,td {
             border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-            text-align: center; /* Centrar el texto */
         }
-        .min-width {
-            min-width: 120px;
-        }
-        .icon-cell {
-            text-align: center;
-            vertical-align: middle;
-        }
-        img {
-            width: 40px;
-            height: 40px;
-        }
-        .nested-table td {
-            width: 60px;
-            height: 50px;
+        .tamany {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Primera tabla -->
     <table>
         <tr>
-            <th>Name</th>
-            <th>Telephone</th>
-        </tr>
-        <tr>
-            <td rowspan="2" class="min-width">Bill Gates</td>
-            <td>555 77 854</td>
-        </tr>
-        <tr>
-            <td>555 77 855</td>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Bill Gates</td>
+                <td>555 77 854</td>
+                <td>555 77 855</td>
+            </tr>
         </tr>
     </table>
-
     <br>
-
-    <!-- Segunda tabla -->
     <table>
         <tr>
             <td><strong>First Name:</strong></td>
             <td>Bill Gates</td>
         </tr>
         <tr>
-            <td></td>
+            <td rowspan="2"><strong>Telephone:</strong></td>
             <td>555 77 854</td>
         </tr>
         <tr>
-            <td><strong>Telephone:</strong></td>
             <td>555 77 855</td>
         </tr>
     </table>
-
     <br>
-
-    <!-- Tercera tabla mejorada (con diseño preciso) -->
-    <table class="nested-table">
+    <table >
         <tr>
-            <td>First</td>
-            <td>Row</td>
-        </tr>
-        <tr>
-            <td>Second</td>
-            <td>Row</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>First</td>
+                        <td>Row</td>
+                    </tr>
+                    <tr>
+                        <td>Second</td>
+                        <td>Row</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="tamany">
+                    <tr>
+                        <td>First</td>
+                        <td>Row</td>
+                    </tr>
+                    <tr>
+                        <td>Second</td>
+                        <td>Row</td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="2"><img src="tick.png" alt="Check"/>
+            <td rowspan="2"><img src="tick.png" alt="Check"/>
         </tr>
     </table>
-
-    <br>
-
-    <!-- Cuarta tabla con iconos de verificación -->
-    <table>
-        <tr>
-            <td>First</td>
-            <td>Row</td>
-            <td rowspan="2" class="icon-cell"><img src="https://img.icons8.com/color/48/000000/checked-2--v2.png" alt="Check"></td>
-            <td rowspan="2" class="icon-cell"><img src="https://img.icons8.com/color/48/000000/checked-2--v2.png" alt="Check"></td>
-        </tr>
-        <tr>
-            <td>Second</td>
-            <td>Row</td>
-        </tr>
-    </table>
-
 </body>
 </html>
