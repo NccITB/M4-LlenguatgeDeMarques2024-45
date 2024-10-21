@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas Ejemplo</title>
-    <style>
-        table, th,td {
-            border: 1px solid black;
-        }
-        .tamany td {
-            width: 60px;
-            height: 60px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <tr>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tablas Ejemplo</title>
+        <style>
+            table, th,td {
+                border: 1px solid black;
+            }
+            .tamany td {
+                width: 60px;
+                height: 60px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
             <tr>
-                <th>Name</th>
-                <th colspan="2">Telephone</th>
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Bill Gates</td>
+                    <td>555 77 854</td>
+                    <td>555 77 855</td>
+                </tr>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td><strong>First Name:</strong></td>
+                <td>Bill Gates</td>
             </tr>
             <tr>
-                <td rowspan="2">Bill Gates</td>
+                <td rowspan="2"><strong>Telephone:</strong></td>
                 <td>555 77 854</td>
+            </tr>
+            <tr>
                 <td>555 77 855</td>
             </tr>
-        </tr>
-    </table>
-    <br>
-    <table>
-        <tr>
-            <td><strong>First Name:</strong></td>
-            <td>Bill Gates</td>
-        </tr>
-        <tr>
-            <td rowspan="2"><strong>Telephone:</strong></td>
-            <td>555 77 854</td>
-        </tr>
-        <tr>
-            <td>555 77 855</td>
-        </tr>
-    </table>
-    <br>
-    <table >
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>First</td>
-                        <td>Row</td>
-                    </tr>
-                    <tr>
-                        <td>Second</td>
-                        <td>Row</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table class="tamany">
-                    <tr>
-                        <td>First</td>
-                        <td>Row</td>
-                    </tr>
-                    <tr>
-                        <td>Second</td>
-                        <td>Row</td>
-                    </tr>
-                </table>
-            </td>
-            <td rowspan="2"><img src="tick.png" alt="Check"/>
-            <td rowspan="2"><img src="tick.png" alt="Check"/>
-        </tr>
-    </table>
-</body>
+        </table>
+        <br>
+        <table >
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>First</td>
+                            <td>Row</td>
+                        </tr>
+                        <tr>
+                            <td>Second</td>
+                            <td>Row</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="tamany">
+                        <tr>
+                            <td>First</td>
+                            <td>Row</td>
+                        </tr>
+                        <tr>
+                            <td>Second</td>
+                            <td>Row</td>
+                        </tr>
+                    </table>
+                </td>
+                <td rowspan="2"><img src="tick.png" alt="Check"/>
+                <td rowspan="2"><img src="tick.png" alt="Check"/>
+            </tr>
+        </table>
+    </body>
 </html>
