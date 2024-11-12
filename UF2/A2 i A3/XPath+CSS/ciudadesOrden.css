@@ -1,0 +1,53 @@
+/*h3{color: red;
+	font-size: 12pt;
+	font-family: Helvetica,Arial,sans-serif;
+	background-color: rgb(255,255,255);
+}
+
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  color: white;
+  text-align: center;
+}
+*/
+/* Estil general per a la taula */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/* Estil per al títol principal */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Encapsulament de les capçaleres */
+thead th {
+    background-color: #4CAF50; /* Verd per a l'encapçalament */
+    color: white;              /* Text blanc per a les capçaleres */
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Color de fons alternatiu per les files */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Gris clar per a les files parells */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white; /* Blanc per a les files imparells */
+}
+
+/* Estil de cel·les */
+tbody td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
