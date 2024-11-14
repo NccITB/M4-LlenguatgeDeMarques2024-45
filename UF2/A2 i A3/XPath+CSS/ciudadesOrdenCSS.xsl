@@ -18,9 +18,10 @@
 					</thead>
 					<tbody>
 						<xsl:apply-templates select="//ciudad" >
-							<xsl:sort select="concat(nombre='Vic')" data-type="text" order="ascending" />
-							<xsl:sort select="provincia" order="descending" />
-							<xsl:sort select="habitantes" order="descending" />
+							<xsl:sort select="@order" data-type="number" order="ascending" />
+							
+							<xsl:sort select="provincia"/>
+							<xsl:sort select="habitantes"/>
 						</xsl:apply-templates>
 					</tbody>
 				</table>
