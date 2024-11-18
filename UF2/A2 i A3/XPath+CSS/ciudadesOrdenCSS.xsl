@@ -20,7 +20,6 @@
 					<tbody>
 						<xsl:apply-templates select="//ciudad" >
 							<xsl:sort select="@order" data-type="number" order="ascending" />
-							
 							<xsl:sort select="provincia"/>
 							<xsl:sort select="habitantes"/>
 						</xsl:apply-templates>
